@@ -1,1 +1,14 @@
+.navigation {
+    list-style: none;
+}
+.navigation-link {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: #939699;
+}
