@@ -1,3 +1,10 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 ul {
     margin: 0;
 }
@@ -7,14 +14,10 @@ ul {
     padding: 0;
 }
 .navigation-link {
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 20px;
-
     letter-spacing: 0.5px;
     text-transform: uppercase;
-
     text-decoration: none;
+    font-weight: 900;
     color: #939699;
 }
 
@@ -29,8 +32,6 @@ ul {
     color: #FFF;
 
     font-weight: 900;
-    font-size: 14px;
-    line-height: 20px;
 
     cursor: pointer;
 }
