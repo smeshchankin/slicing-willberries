@@ -1,5 +1,10 @@
+ul {
+    margin: 0;
+}
+
 .navigation {
     list-style: none;
+    padding: 0;
 }
 .navigation-link {
     font-weight: 900;
