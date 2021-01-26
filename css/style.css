@@ -12,3 +12,24 @@
     text-decoration: none;
     color: #939699;
 }
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+
+    background-color: #4592FF;
+    border-radius: 20px;
+    border: none;
+    color: #FFF;
+
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+
+    cursor: pointer;
+}
+
+.button-icon {
+    margin-right: 10px;
+}
