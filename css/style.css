@@ -40,6 +40,17 @@ ul {
     margin-right: 10px;
 }
 
+.slider {
+    position: relative;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
 .slide {
     padding-top: 90px;
     padding-bottom: 110px;
