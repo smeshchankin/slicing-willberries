@@ -51,6 +51,12 @@ ul {
     transform: translateY(-50%);
 }
 
+.slider-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .slide {
     padding-top: 90px;
     padding-bottom: 110px;
