@@ -36,6 +36,46 @@ ul {
     cursor: pointer;
 }
 
-.button-icon {
+.button-icon, .button-price {
     margin-right: 10px;
+}
+
+.slide {
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+.slide-1 {
+    background-color: #B4D1E0;
+
+}
+
+.label {
+    padding: 5px 12px;
+
+    background-color: #3DC47E;
+    border-radius: 3px;
+
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.slide-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 70px;
+    color: #262D33;
+}
+
+.slide-description {
+    max-width: 335px;
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    line-height: 30px;
+    color: #4B5157;
 }
