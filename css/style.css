@@ -46,8 +46,7 @@ ul {
 }
 
 .slide-1 {
-    background-color: #B4D1E0;
-
+    background: #B4D1E0 url('../img/slide-1.png') no-repeat top right;
 }
 
 .label {
@@ -65,6 +64,7 @@ ul {
     margin-top: 20px;
     margin-bottom: 15px;
 
+    font-family: 'Roboto Slab', serif;
     font-weight: bold;
     font-size: 55px;
     line-height: 70px;
