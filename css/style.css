@@ -39,6 +39,10 @@ ul {
 .button-icon, .button-price {
     margin-right: 10px;
 }
+.button-icon:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+}
 
 .slider {
     position: relative;
@@ -95,4 +99,47 @@ ul {
     font-size: 18px;
     line-height: 30px;
     color: #4B5157;
+}
+
+.card {
+    display: block;
+    border: none;
+    min-height: 370px;
+
+    border-radius: 10px;
+
+    padding: 60px 46px 80px 46px;
+}
+
+.card-1 {
+    background: #E3E2E3 url('../img/card-1.jpg') no-repeat top right;
+    background-size: cover;
+}
+
+.card-2 {
+    background: #E3E2E3 url('../img/card-2.jpg') no-repeat top right;
+    background-size: cover;
+}
+
+.card-title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #262D33;
+
+    max-width: 220px;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
+
+    max-width: 170px;
+    margin-bottom: 25px;
+}
+
+.text-light {
+    color: #fff;
 }
