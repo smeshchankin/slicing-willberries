@@ -9,6 +9,10 @@ ul {
     margin: 0;
 }
 
+.header {
+    padding: 15px 0;
+}
+
 .navigation {
     list-style: none;
     padding: 0;
