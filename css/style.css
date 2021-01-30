@@ -121,7 +121,22 @@ ul {
 }
 
 .card-2 {
-    background: #E3E2E3 url('../img/card-2.jpg') no-repeat top right;
+    background: #000 url('../img/card-2.jpg') no-repeat top right;
+    background-size: cover;
+}
+
+.card-3 {
+    padding-top: 35px;
+
+    background: #CCD5E6 url('../img/card-3.png') no-repeat top right 10%;
+    background-size: contain;
+}
+
+.card-4 {
+    padding-top: 35px;
+    padding-left: 25px;
+
+    background: #FF4F52 url('../img/card-4.png') no-repeat top right;
     background-size: cover;
 }
 
@@ -134,6 +149,14 @@ ul {
 
     max-width: 220px;
 }
+.card-title.large {
+    font-size: 40px;
+    line-height: 50px;
+
+    max-width: 420px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
 .card-text {
     font-size: 14px;
@@ -142,6 +165,16 @@ ul {
 
     max-width: 170px;
     margin-bottom: 25px;
+}
+.card-text.large {
+    max-width: 320px;
+}
+
+.card-price {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 900;
 }
 
 .text-light {
