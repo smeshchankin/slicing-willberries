@@ -197,3 +197,40 @@ ul {
 
     padding: 10px;
 }
+
+.goods-card {
+    position: relative;
+    padding: 30px 35px 35px 35px;
+
+    text-align: center;
+}
+
+.goods-card .label {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+}
+
+.goods-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    color: #262D33;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.goods-description {
+    color: #4B5157;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.goods-price {
+    color: #262D33;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 900;
+}
