@@ -261,3 +261,15 @@ ul {
     color: #fff;
     text-decoration: none;
 }
+
+.footer-text {
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #E7D9FF;
+}
+
+.social-link {
+    text-decoration: none;
+    margin-left: 15px;
+}
