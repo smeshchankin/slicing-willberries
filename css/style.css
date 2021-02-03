@@ -234,3 +234,30 @@ ul {
     line-height: 30px;
     font-weight: 900;
 }
+
+.footer {
+    padding-top: 45px;
+    padding-bottom: 40px;
+
+    background-color: #8F79D4;
+    color: #fff;
+}
+
+.footer-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.footer-menu-link {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #fff;
+    text-decoration: none;
+}
