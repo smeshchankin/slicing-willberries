@@ -273,3 +273,8 @@ ul {
     text-decoration: none;
     margin-left: 15px;
 }
+
+.footer-line {
+    color: white;
+    opacity: 0.5;
+}
