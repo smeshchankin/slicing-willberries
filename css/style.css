@@ -57,6 +57,7 @@ ul {
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
+    z-index: 2;
 }
 
 .slider-button {
@@ -68,10 +69,15 @@ ul {
 .slide {
     padding-top: 90px;
     padding-bottom: 110px;
+    min-height: 568px;
 }
 
 .slide-1 {
     background: #B4D1E0 url('../img/slide-1.png') no-repeat top right;
+}
+
+.slide-2 {
+    background: #B9E0B4 url('../img/slide-1.png') no-repeat top right;
 }
 
 .label {
