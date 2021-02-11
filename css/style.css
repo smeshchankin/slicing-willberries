@@ -303,6 +303,9 @@ ul {
     .slide-1 {
         background-size: cover;
     }
+    .card-3 {
+        background-size: cover;
+    }
 }
 
 @media(max-width: 992px) {
@@ -316,5 +319,13 @@ ul {
         font-size: 36px;
         line-height: 1.4;
         margin-bottom: 0;
+    }
+    .card {
+        background-position: left top;
+        padding: 30px;
+        min-height: 300px;
+    }
+    .card-4 {
+        background-position: right top;
     }
 }
