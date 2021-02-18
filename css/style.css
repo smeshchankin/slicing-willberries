@@ -13,6 +13,20 @@ ul {
     padding: 15px 0;
 }
 
+.icon {
+    fill: white;
+}
+.icon-logo {
+    fill: #262D33;
+}
+.icon-cart {
+    margin-right: 10px;
+}
+.icon-arrow {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
 .navigation {
     list-style: none;
     padding: 0;
@@ -40,12 +54,8 @@ ul {
     cursor: pointer;
 }
 
-.button-icon, .button-price {
+.button-price {
     margin-right: 10px;
-}
-.button-icon:last-child {
-    margin-right: 0;
-    margin-left: 10px;
 }
 
 .slider {
