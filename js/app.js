@@ -1,4 +1,12 @@
 (function() {
+    const goodsData = [
+      { img: 'goods-1.jpg', title: 'Embroidered Hoodie', descr: 'Yellow/Lilac/Fuchsia/Orange', price: '$89' },
+      { img: 'goods-2.jpg', title: 'Faded Beach Trousers', descr: 'Navy/Ochre/Black/Khaki', price: '$139' },
+      { img: 'goods-3.jpg', title: 'Text T-Shirt', descr: 'White', price: '$59' },
+      { img: 'goods-4.jpg', title: 'Striped Long Sleeve Shirt', descr: 'Red/Sky Blue', price: '$119' }
+    ];
+    populate('.good-card', goodsData);
+
     const paymentData = [
         { img: 'visa.png', payment: 'Visa' },
         { img: 'mastercard.png', payment: 'Mastercard' },
@@ -25,14 +33,14 @@
         const node = template.cloneNode(true);
         Object.keys(row).forEach(function(key) {
           const k = '${' + key + '}';
-          node.innerHTML = node.innerHTML.replace(k, row[key]);
+          node.innerHTML = node.innerHTML.replaceAll(k, row[key]);
           if (node.alt) {
-            node.alt = node.alt.replace(k, row[key]);
+            node.alt = node.alt.replaceAll(k, row[key]);
           }
         });
 
         if (node.dataset.src) {
-          node.src = node.dataset.src.replace('${img}', row.img);
+          node.src = node.dataset.src.replaceAll('${img}', row.img);
         }
 
         parent.appendChild(node);
