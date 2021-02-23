@@ -1,4 +1,14 @@
 (function() {
+    const navigationData = [
+      { link: '#', name: 'Womens' },
+      { link: '#', name: 'Mens' },
+      { link: '#', name: 'Goods' },
+      { link: '#', name: 'Accessories' },
+      { link: '#', name: 'Brands' },
+      { link: '#', name: 'Blog' }
+    ];
+    populate('.navigation-item', navigationData);
+
     const goodsData = [
       { img: 'goods-1.jpg', title: 'Embroidered Hoodie', descr: 'Yellow/Lilac/Fuchsia/Orange', price: '$89' },
       { img: 'goods-2.jpg', title: 'Faded Beach Trousers', descr: 'Navy/Ochre/Black/Khaki', price: '$139' },
