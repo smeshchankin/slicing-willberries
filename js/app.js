@@ -1,4 +1,14 @@
 (function() {
+    const sliderData = [
+      { id: 1, label: "Bestseller", title: "Sweater Choker Neck",
+        description: "Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.",
+        price: 319 },
+      { id: 2, label: "New", title: "Text T-Shirt",
+        description: "Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.",
+        price: 229 },
+    ];
+    populate('.swiper-slide', sliderData);
+
     const navigationData = [
       { link: '#', name: 'Womens' },
       { link: '#', name: 'Mens' },
@@ -48,6 +58,11 @@
 
       data.forEach(row => {
         const node = template.cloneNode(true);
+        if (node.className && row.id) {
+          const k = '${id}';
+          node.className = node.className.replaceAll(k, row.id);
+        }
+
         Object.keys(row).forEach(function(key) {
           const k = '${' + key + '}';
           node.innerHTML = node.innerHTML.replaceAll(k, row[key]);
