@@ -1,4 +1,6 @@
 (function() {
+  readData('db/sliders.json');
+
     const sliderData = [
       { id: 1, label: "Bestseller", title: "Sweater Choker Neck",
         description: "Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.",
@@ -78,6 +80,17 @@
         parent.appendChild(node);
       });
       parent.removeChild(template);
+    }
+
+    async function readData(filename) {
+      const response = await fetch(filename);
+
+      if (response.ok) {
+        const json = await response.json();
+        return json;
+      } else {
+        console.log('File ' + filename + ' was not found. Status: ' + response.status);
+      }
     }
 
     new Swiper('.swiper-container', {

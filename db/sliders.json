@@ -1,0 +1,8 @@
+[
+    { "id": 1, "label": "Bestseller", "title": "Sweater Choker Neck",
+        "description": "Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.",
+        "price": 319 },
+    { "id": 2, "label": "New", "title": "Text T-Shirt",
+        "description": "Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.",
+        "price": 229 }
+]
