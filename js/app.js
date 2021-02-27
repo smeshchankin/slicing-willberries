@@ -1,16 +1,4 @@
 (function() {
-  readData('db/sliders.json');
-
-    const sliderData = [
-      { id: 1, label: "Bestseller", title: "Sweater Choker Neck",
-        description: "Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.",
-        price: 319 },
-      { id: 2, label: "New", title: "Text T-Shirt",
-        description: "Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.",
-        price: 229 },
-    ];
-    populate('.swiper-slide', sliderData);
-
     const navigationData = [
       { link: '#', name: 'Womens' },
       { link: '#', name: 'Mens' },
@@ -93,18 +81,22 @@
       }
     }
 
-    new Swiper('.swiper-container', {
-        loop: true,
+    readData('db/sliders.json')
+      .then(data => populate('.swiper-slide', data))
+      .then(() => 
+        new Swiper('.swiper-container', {
+          loop: true,
 
-        // Navigation arrows
-        navigation: {
-          nextEl: '.slider-button-next',
-          prevEl: '.slider-button-prev',
-        },
+          // Navigation arrows
+          navigation: {
+            nextEl: '.slider-button-next',
+            prevEl: '.slider-button-prev',
+          },
       
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        })
+      );
 }());
