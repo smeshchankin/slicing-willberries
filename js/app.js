@@ -1,13 +1,6 @@
 (function() {
-    const navigationData = [
-      { link: '#', name: 'Womens' },
-      { link: '#', name: 'Mens' },
-      { link: '#', name: 'Goods' },
-      { link: '#', name: 'Accessories' },
-      { link: '#', name: 'Brands' },
-      { link: '#', name: 'Blog' }
-    ];
-    populate('.navigation-item', navigationData);
+    readData('db/navigation.json')
+      .then(data => populate('.navigation-item', data));
 
     const goodsData = [
       { img: 'goods-1.jpg', title: 'Embroidered Hoodie', descr: 'Yellow/Lilac/Fuchsia/Orange', price: '$89' },
