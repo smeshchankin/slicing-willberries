@@ -2,13 +2,8 @@
     readData('db/navigation.json')
       .then(data => populate('.navigation-item', data));
 
-    const goodsData = [
-      { img: 'goods-1.jpg', title: 'Embroidered Hoodie', descr: 'Yellow/Lilac/Fuchsia/Orange', price: '$89' },
-      { img: 'goods-2.jpg', title: 'Faded Beach Trousers', descr: 'Navy/Ochre/Black/Khaki', price: '$139' },
-      { img: 'goods-3.jpg', title: 'Text T-Shirt', descr: 'White', price: '$59' },
-      { img: 'goods-4.jpg', title: 'Striped Long Sleeve Shirt', descr: 'Red/Sky Blue', price: '$119' }
-    ];
-    populate('.good-card', goodsData);
+    readData('db/goods.json')
+      .then(data => populate('.good-card', data));
 
     const paymentData = [
         { img: 'visa.png', payment: 'Visa' },

@@ -1,0 +1,6 @@
+[
+    { "img": "goods-1.jpg", "title": "Embroidered Hoodie", "descr": "Yellow/Lilac/Fuchsia/Orange", "price": "$89" },
+    { "img": "goods-2.jpg", "title": "Faded Beach Trousers", "descr": "Navy/Ochre/Black/Khaki", "price": "$139" },
+    { "img": "goods-3.jpg", "title": "Text T-Shirt", "descr": "White", "price": "$59" },
+    { "img": "goods-4.jpg", "title": "Striped Long Sleeve Shirt", "descr": "Red/Sky Blue", "price": "$119" }
+]
