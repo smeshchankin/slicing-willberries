@@ -1,0 +1,6 @@
+[
+    { "img": "visa.png", "payment": "Visa" },
+    { "img": "mastercard.png", "payment": "Mastercard" },
+    { "img": "paypal.png", "payment": "PayPal" },
+    { "img": "bitcoin.png", "payment": "Bitcoin" }
+]

@@ -5,15 +5,10 @@
     readData('db/goods.json')
       .then(data => populate('.good-card', data));
 
-    const paymentData = [
-        { img: 'visa.png', payment: 'Visa' },
-        { img: 'mastercard.png', payment: 'Mastercard' },
-        { img: 'paypal.png', payment: 'PayPal' },
-        { img: 'bitcoin.png', payment: 'Bitcoin' }
-    ];
-    populate('.payment-logo', paymentData);
+    readData('db/payment.json')
+      .then(data => populate('.payment-logo', data));
 
-    const footerMenuData = [
+      const footerMenuData = [
       { link: '#', name: 'Shop' },
       { link: '#', name: 'About Us' },
       { link: '#', name: 'Careers' },
