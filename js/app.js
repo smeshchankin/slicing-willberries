@@ -8,17 +8,10 @@
     readData('db/payment.json')
       .then(data => populate('.payment-logo', data));
 
-      const footerMenuData = [
-      { link: '#', name: 'Shop' },
-      { link: '#', name: 'About Us' },
-      { link: '#', name: 'Careers' },
-      { link: '#', name: 'FAQ' },
-      { link: '#', name: 'Blog' },
-      { link: '#', name: 'Contacts' }
-    ];
-    populate('.footer-menu-item', footerMenuData);
+      readData('db/menu.json')
+      .then(data => populate('.footer-menu-item', data));
 
-    const socialLinks = [
+      const socialLinks = [
       { id: 'facebook', class: 'icon-facebook', width: 10, height: 18 },
       { id: 'twitter', class: 'icon-twitter', width: 18, height: 16 },
       { id: 'instagram', class: 'icon-instagram', width: 18, height: 18 }
