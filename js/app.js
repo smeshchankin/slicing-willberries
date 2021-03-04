@@ -8,15 +8,11 @@
     readData('db/payment.json')
       .then(data => populate('.payment-logo', data));
 
-      readData('db/menu.json')
+    readData('db/menu.json')
       .then(data => populate('.footer-menu-item', data));
 
-      const socialLinks = [
-      { id: 'facebook', class: 'icon-facebook', width: 10, height: 18 },
-      { id: 'twitter', class: 'icon-twitter', width: 18, height: 16 },
-      { id: 'instagram', class: 'icon-instagram', width: 18, height: 18 }
-    ];
-    populate('.social-link', socialLinks);
+    readData('db/social.json')
+      .then(data => populate('.social-link', data));
 
     function populate(selector, data) {
       const template = document.querySelector(selector);
