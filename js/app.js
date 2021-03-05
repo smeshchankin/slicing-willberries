@@ -2,17 +2,21 @@
     readData('db/navigation.json')
       .then(data => populate('.navigation-item', data));
 
+    readData('db/sliders.json')
+      .then(data => populate('.swiper-slide', data))
+      .then(buildSwiper);
+
     readData('db/goods.json')
       .then(data => populate('.good-card', data));
-
-    readData('db/payment.json')
-      .then(data => populate('.payment-logo', data));
 
     readData('db/menu.json')
       .then(data => populate('.footer-menu-item', data));
 
     readData('db/social.json')
       .then(data => populate('.social-link', data));
+
+    readData('db/payment.json')
+      .then(data => populate('.payment-logo', data));
 
     function populate(selector, data) {
       const template = document.querySelector(selector);
@@ -53,22 +57,20 @@
       }
     }
 
-    readData('db/sliders.json')
-      .then(data => populate('.swiper-slide', data))
-      .then(() => 
-        new Swiper('.swiper-container', {
-          loop: true,
+    function buildSwiper() {
+      return new Swiper('.swiper-container', {
+        loop: true,
 
-          // Navigation arrows
-          navigation: {
-            nextEl: '.slider-button-next',
-            prevEl: '.slider-button-prev',
-          },
-      
-          // And if we need scrollbar
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
-        })
-      );
+        // Navigation arrows
+        navigation: {
+          nextEl: '.slider-button-next',
+          prevEl: '.slider-button-prev',
+        },
+    
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    }
 }());
