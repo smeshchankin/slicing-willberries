@@ -1,5 +1,5 @@
 # Slicing Willberries
-[Open GtHub Pages](http://smeshchankin.github.io/slicing-mortal-kombat)
+[Open GtHub Pages](http://smeshchankin.github.io/slicing-willberries)
 
 Slicing Will Berries e-shop
 
