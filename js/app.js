@@ -1,6 +1,5 @@
 (function() {
-    readData('db/navigation.json')
-      .then(data => populate('.navigation-item', data));
+    populator.populateFromJson();
 
     readData('db/sliders.json')
       .then(data => populate('.swiper-slide', data))
