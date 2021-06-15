@@ -5,9 +5,6 @@
       .then(data => populate('.swiper-slide', data))
       .then(buildSwiper);
 
-    readData('db/goods.json')
-      .then(data => populate('.good-card', data));
-
     readData('db/menu.json')
       .then(data => populate('.footer-menu-item', data));
 
