@@ -5,9 +5,6 @@
       .then(data => populate('.swiper-slide', data))
       .then(buildSwiper);
 
-    readData('db/social.json')
-      .then(data => populate('.social-link', data));
-
     readData('db/payment.json')
       .then(data => populate('.payment-logo', data));
 
