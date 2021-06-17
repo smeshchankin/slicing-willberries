@@ -5,9 +5,6 @@
       .then(data => populate('.swiper-slide', data))
       .then(buildSwiper);
 
-    readData('db/payment.json')
-      .then(data => populate('.payment-logo', data));
-
     function populate(selector, data) {
       const template = document.querySelector(selector);
       const parent = template.parentNode;
